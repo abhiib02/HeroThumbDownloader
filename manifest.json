@@ -1,0 +1,17 @@
+{
+    "manifest_version":3,
+    "name": "Hero Thumb Downloader",
+    "description": "This extension extract YT thumbnail and open in new tab",
+    "version": "1.0",
+    "action": {
+    "default_icon": "icon.png"
+    },
+    "permissions": ["activeTab"],
+"content_scripts": [
+{
+"matches": ["https://www.youtube.com/*"],
+"js": ["contentScript.js"]
+}
+]
+    }
+ 
